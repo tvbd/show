@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://adsreference.com/widget.js?id=1715060516324607500" defer="defer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RgShows : Guide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devtools-detector/2.0.17/devtools-detector.js"></script>
+    <script src="js/devtoolsdetetctor.js" preload></script>
+    <script src="js/nocheats.js" preload></script>
+    <link rel="preload stylesheet" href="css/flash.css" as="style">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background for container */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #f39c12;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .features, .shortcuts {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .features i, .shortcuts i {
+            color: #f39c12;
+            margin-right: 10px;
+        }
+        .shortcuts p {
+            margin: 10px 0;
+        }
+        .shortcut-keys {
+            background-color: #333;
+            border-radius: 5px;
+            padding: 5px;
+            display: inline-block;
+        }
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .stats-button {
+            display: block;
+            width: 100%;
+            background-color: #f39c12;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .stats-button:hover {
+            background-color: #d98310;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="backgroundVideo">
+            <!-- Initially, there is no source, it will be set using JavaScript -->
+        </video>
+    </div>
+    <iframe src="views.html" style="display: none;" id="viewsFrame"></iframe>
+        <script>
+            document.getElementById('viewsFrame').onload = function() {
+                var iframeDoc = document.getElementById('viewsFrame').contentDocument || document.getElementById('viewsFrame').contentWindow.document;
+                var viewsCounter = iframeDoc.querySelector('script[src*="freevisitorcounters.com"]');
+                if (viewsCounter) {
+                    document.getElementById('viewsCount').innerText = 'Total Views: (Check views.html)';
+                } else {
+                    document.getElementById('viewsCount').innerText = 'Failed to load view counter.';
+                }
+            };
+        </script>
+    <div class="container">
+        <center><h1>RgShows 🎬</h1></center>
+        <center><p>RgShows is an open-source HTML-based platform that allows users to watch a variety of content, including TV shows, movies, and anime – all for free! Our mission is to provide an enjoyable streaming experience with minimal ads and customizable features.</p></center>
+        
+        <div class="features">
+            <center><h2>Features</h2></center>
+            <ul>
+                <center><li><i class="fas fa-video"></i> <strong>Free Streaming:</strong> Watch your favorite TV shows, movies, and anime without any subscription fees.</li></center>
+                <center><li><i class="fas fa-globe"></i> <strong>Wide Variety:</strong> Explore a diverse library of content, including the latest releases and timeless classics.</li></center>
+                <center><li><i class="fas fa-ad"></i> <strong>Minimal Ads:</strong> We believe in a streamlined viewing experience, so we keep advertisements to a minimum.</li></center>
+                <center><li><i class="fas fa-paint-brush"></i> <strong>Customizations:</strong> Tailor your viewing experience with customizable settings for a personalized touch.</li></center>
+                <center><li><i class="fas fa-keyboard"></i> <strong>Shortcuts:</strong> Use shortcuts for quick navigation.</li></center>
+            </ul>
+        </div>
+
+        <div class="shortcuts">
+            <center><h2>Shortcut Keys</h2></center>
+            <center><p><span class="shortcut-keys">Alt + 1</span> keys to go to home page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 2</span> keys to go to Movies page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 3</span> keys to go to Shows page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 4</span> keys to go to Anime page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 5</span> keys to go to LiveTV page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 6</span> keys to go to Settings page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + ←</span> keys to navigate to the backward page if exist.</p></center>
+            <center><p><span class="shortcut-keys">Alt + →</span> keys to navigate to the forward page if exist.</p></center>
+            <center><p><span class="shortcut-keys">Alt + M or m</span> keys to watch a random movie.</p></center>
+            <center><p><span class="shortcut-keys">Alt + S or s</span> keys to watch a random series/show.</p></center>
+            <center><p><span class="shortcut-keys">Alt + X or x</span> keys to close the movies/series/shows player.</p></center>
+            <center><p><span class="shortcut-keys">Alt + Delete</span> keys to clear all the data.</p></center>
+        </div>
+        <button class="stats-button" onclick="window.location.href='announcements.html'">Check Announcements</button>
+        <button class="stats-button" onclick="window.location.href='views.html'">Check RgShows Stats</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var videos = [
+                'https://files.catbox.moe/4jghie.mp4',
+                'https://files.catbox.moe/fmz6cb.mp4',
+                'https://files.catbox.moe/3muls6.mp4',
+                'https://files.catbox.moe/8l96u2.mp4'
+            ]; // Array of video URLs
+            var randomIndex = Math.floor(Math.random() * videos.length); // Generate a random index
+            var video = document.getElementById('backgroundVideo');
+            video.src = videos[randomIndex]; // Set the source of the video
+        });
+    </script>
+    <script src="js/logger.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/blockIP.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/blocker.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/popupblocker.js"></script>
+    <script src="js/openload.user.js"></script>
+    <script src="js/adblock.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/screenfull.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const storedCursor = localStorage.getItem("selectedCursor");
+        const cursorType = storedCursor ? parseInt(storedCursor) : 1;
+
+        new kursor({
+            type: cursorType
+        });
+    });
+</script>
+<script>
+    const myPopups = new Popup({
+        id: "Discord",
+        title: "Discord?",
+        content: `
+            Join us on Discord {a-https://discord.gg/bosskingdom-comeback-1090560322760347649}[Here!]`,
+        showImmediately: true
+    });
+</script>
+</body>
+</html>

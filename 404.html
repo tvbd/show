@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Pages</title>
+<script src="js/devtoolsdetetctor.js" preload></script>
+<script src="js/nocheats.js" preload></script>
+</head>
+<body>
+<script>
+// Array of page URLs
+const pages = [
+  "pages/page1.html",
+  "pages/page2.html",
+  "pages/page3.html",
+  "pages/page4.html",
+  "pages/page5.html",
+  "pages/page6.html",
+  "pages/page7.html",
+];
+
+// Generate a random number between 0 and the number of pages
+const randomIndex = Math.floor(Math.random() * pages.length);
+
+// Redirect to a random page
+window.location.href = pages[randomIndex];
+</script>
+</body>
+</html>
